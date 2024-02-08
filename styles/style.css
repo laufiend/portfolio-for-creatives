@@ -563,7 +563,7 @@ a:active {
 }
 
 .project-image {
-  width: 50%;
+  width: 100%;
   min-height: 50vh;
   /* min-height should be deleted if you want to remove space between project images on project pages */
   display: flex;
