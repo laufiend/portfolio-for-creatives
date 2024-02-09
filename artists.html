@@ -16,8 +16,8 @@
   <header class="hero-header">
     <ul class="branding-navigation">
       <li><a href="artists.html" class="custom-navigation">About the Artists</a></li>
-      <li class="logo"><a href="index.html"><img src="assets/branding-images/dangerlogo_icon.ai" /></a></li>
-      <li><a href="#" class="custom-navigation">About</a></li>
+      <li class="logo"><a href="index.html"><img src="assets/branding-images/dangerlogo_icon.svg" /></a></li>
+      <li><a href="about.html" class="custom-navigation">About</a></li>
     </ul>
   </header>
 
@@ -533,70 +533,53 @@
 
 </main>
 
-  <ul class="global-footer">
-    <li class="footer-item-1">
-      <h2>About Me</h2>
-      <p>A highly customizable portfolio starter template with a big hero for your branding and intro. The work page is based on
-        <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"></a>CSS Grid</a>. The project
-        page has a sticky sidebar. Beginngers can add their own logo, <a href="https://fonts.google.com/" target="_blank"></a>custom
-        typography</a>, custom colours, custom hover states, custom cursor, and more.</p>
-      <p>Customize the hero and footer. Make something randomly fly across the screen! Experiment with <a
-          href="https://mycolor.space/gradient" target="_blank">animated gradients</a>, <a
-          href="https://blobanimation.com/" target="_blank">animated blobs</a>, animated GIFs, and <a
-          href="https://www.svgator.com/" target="_blank">animated SVGs</a>! Add your own typewriter effect, parallax
-        effect or custom effects and easter eggs! Consider adding a <a href="play.html">Play</a> page or <a
-          href="resume.html">resume</a>. Don't forget to customize your <a href="404.html">404 Error Page</a> and
-        optimize your page titles and descriptions for SEO!</p>
-    </li>
-    <li class="footer-item-2">
-      <h2>Awards &amp; Recognition</h2>
-      <ul class="awards-list">
-        <li class="award-item"><a href="#">Award goes here</a></li>
-        <li class="award-item"><a href="#">Recognition goes here</a></li>
-        <li class="award-item"><a href="#">Award goes here</a></li>
-      </ul>
-      <h2>Selected Works</h2>
-      <ul class="footer-nav-list">
-        <li class="footer-nav-item"><a href="index.html">Holding Page</a></li>
-        <li class="footer-nav-item"><a href="work.html">Work Page</a></li>
-        <li class="footer-nav-item"><a href="work-clean.html">Work Page (Clean Version)</a></li>
-        <li class="footer-nav-item"><a href="work-clean-flier.html">Work Page (Clean Version with Flier)</a></li>
-        <li class="footer-nav-item"><a href="work-grayscale.html">Work Page (Grayscale Filter)</a></li>
-        <li class="footer-nav-item"><a href="work-ghost.html">Work Page (Ghost Flying Icon)</a></li>
-        <li class="footer-nav-item"><a href="artists.html#">Project Page</a></li>
-        <li class="footer-nav-item"><a href="about.html">About</a></li>
-      </ul>
-    </li>
-    <li class="footer-item-3">
-      <h2>Contact &amp; Social</h2>
-      <ul class="socials-list">
-        <li class="social-item"><a href="#">Insta</a></li>
-        <li class="social-item"><a href="#">LinkedIn</a></li>
-        <li class="social-item"><a href="#">Behance</a></li>
-      </ul>
-    </li>
-    <li class="footer-item-4">
-      <p><a href="#top">Smooth scroll to the top</a></p>
-      <p class="fineprint">&copy; 2020-2023. Hand crafted with <span class="heart">❤</span> + Flexbox + CSS Grid by
-        James Neufeld.</p>
-    </li>
-  </ul>
+<ul class="global-footer">
+  <li class="footer-item-1">
+    <h2>About IDEA</h2>
+    <p>Capilano University’s Bachelor of Design in Visual Communication is a career-oriented program 
+      for the next generation of creative professionals, with concentrations in branding, illustration and interactive design.</p>
+      
+  </li>
+  <li class="footer-item-2">
 
+    <a href="https://www.capilanou.ca/programs--courses/program-profiles/bachelor-of-design-in-visual-communication/" target="_blank">
+    <figure class="idealogo">
+    
+      <img src="assets/branding-images/idea-logo.png" width="70%"/>
+  </figure> </a>
+    <!-- add padding at the top of the logo in the CSS, center align -->
 
-  <script type="text/javascript">
-    myID = document.getElementById("myID");
+  </li>
+  <li class="footer-item-3">
+    <h2>Contact &amp; Social</h2>
+    <ul class="socials-list">
+      <li class="social-item"><a href="https://www.capilanou.ca/programs--courses/search--select/explore-our-areas-of-study/fine--applied-arts/idea-school-of-design/" target="_blank">IDEA School of Design</a></li>
+      <li class="social-item"><a href="https://www.instagram.com/capuidea/" target="blank">CapU IDEA Instagram</a></li>
+      <li class="social-item"><a href="https://www.instagram.com/ideatwentysix" target="_blank">IDEA 2026 Instagram</a></li>
+    </ul>
+  </li>
+  <li class="footer-item-4">
+    <p class="fineprint">&copy; 2020-2023. Hand crafted with <span class="heart">❤</span> + Flexbox + CSS Grid by
+      James Neufeld.</p>
+  </li>
+</ul>
 
-    var myScrollFunc = function () {
-      var y = window.scrollY;
-      if (y >= 800) {
-        myID.className = "bottomMenu show"
-      } else {
-        myID.className = "bottomMenu hide"
-      }
-    };
+<div id="myID" class="bottomMenu hide"><a href="#">Back to top</a></div>
 
-    window.addEventListener("scroll", myScrollFunc);
-  </script>
+<script type="text/javascript">
+  myID = document.getElementById("myID");
+
+  var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 800) {
+      myID.className = "bottomMenu show"
+    } else {
+      myID.className = "bottomMenu hide"
+    }
+  };
+
+  window.addEventListener("scroll", myScrollFunc);
+</script>
 </body>
 
 </html>
