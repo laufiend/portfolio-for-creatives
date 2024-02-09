@@ -327,6 +327,9 @@ a:active {
   flex-direction: column;
 }
 
+
+
+.hero-image {width: 60%; border: 2px dashed hotpink; padding-bottom: 1rem;}
 .branding-navigation {
   display: flex;
   flex-direction: row;
