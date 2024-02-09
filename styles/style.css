@@ -329,7 +329,7 @@ a:active {
 
 
 
-.hero-image {width: 70%; border: 0px dashed hotpink; padding-bottom: 3rem;}
+.hero-image {width: 70%; border: 0px dashed hotpink; padding-bottom: 5rem;}
 .branding-navigation {
   display: flex;
   flex-direction: row;
@@ -339,7 +339,7 @@ a:active {
 }
 
 .logo {
-  width: 3rem;
+  width: 2rem;
 }
 
 .hero-headline-wrapper {
@@ -490,7 +490,7 @@ a:active {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  min-height: 100vh;
+  min-height: 50vh;
   background: var(--background-color-footer);
   padding: 1rem;
 }
@@ -519,6 +519,10 @@ a:active {
   margin-bottom: 2rem;
 }
 
+.idealogo {
+  
+  width: 120%;
+}
 
 /* Project Page 
 
