@@ -18,7 +18,7 @@
   <section class="hero">
     <header class="hero-header">
       <ul class="branding-navigation">
-        <li><a href="artists.php" class="custom-navigation">About the Artists</a></li>
+        <li><a href="artists.php" class="custom-navigation">About the Artists From Header .php</a></li>
         <li class="logo"><a href="indextest.php"><img src="assets/branding-images/dangerlogo_icon.svg"/></a></li>
         <li><a href="about.php" class="custom-navigation">About the Exhibition</a></li>
       </ul>
