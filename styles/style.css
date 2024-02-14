@@ -329,7 +329,7 @@ a:active {
 
 
 
-.hero-image {width: 70%; border: 0px dashed hotpink; padding-bottom: 5rem;}
+.hero-image {width: 80%; border: 0px dashed hotpink; padding-bottom: 5rem;}
 .branding-navigation {
   display: flex;
   flex-direction: row;

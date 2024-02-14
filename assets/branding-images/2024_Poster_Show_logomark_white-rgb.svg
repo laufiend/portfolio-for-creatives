@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Logomark_Black" data-name="Logomark Black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325.51 428.45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Logo_Mark" data-name="Logo Mark">
+    <path class="cls-1" d="M8.38,159.33h103.32l7.34,269.12H0L8.38,159.33Z"/>
+    <rect class="cls-1" x="7.85" y="0" width="103.35" height="103.35"/>
+    <path class="cls-1" d="M317.13,269.12h-103.32L206.47,0h119.04l-8.38,269.12Z"/>
+    <rect class="cls-1" x="214.32" y="325.11" width="103.35" height="103.35" transform="translate(531.99 753.56) rotate(180)"/>
+  </g>
+</svg>
