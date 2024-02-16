@@ -10,12 +10,9 @@ Add the Google Fonts you want, remove the ones you don't.
 
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab|Staatliches&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /*
 
 Imported stylesheets. Remove the ones you do not want to use.
@@ -27,12 +24,11 @@ Imported stylesheets. Remove the ones you do not want to use.
 ██ ██      ██ ██       ██████  ██   ██    ██         ██████ ███████ ███████ 
 
 */
-
-@import url('make-something-fly.css');
-@import url('animated-gradient.css');
-@import url('text-stroke.css');
-@import url('stroke-shadow.css');
-@import url('scroll-to-top.css');
+@import url("make-something-fly.css");
+@import url("animated-gradient.css");
+@import url("text-stroke.css");
+@import url("stroke-shadow.css");
+@import url("scroll-to-top.css");
 /*
 
 X-Small devices (portrait phones, less than 576px) 
@@ -51,7 +47,6 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
 }
 
 *,
@@ -73,31 +68,35 @@ html {
 /* Design variables refer to CSS variables that store specific design elements, such as colors and typography, which can be utilized throughout a website. Instead of individually modifying each CSS element, designers can quickly make changes by using design variables. Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-typeface: "Inter", sans-serif;
-  --heading-typeface: 'Eczar', serif;
-  --project-title-typeface: 'Eczar', serif;
+  --body-typeface: "Libre Franklin", sans-serif;
+  --heading-typeface: "Libre Baskerville", serif;
+  --subheading-typeface: "Montserrat", sans-serif;
+
+  --project-title-typeface: "Montserrat", sans-serif;
   --background-color: #fdfdfd;
   --background-color-about: #f5f5f5;
-  --background-color-footer: #f5f5f5;    
+  --background-color-footer: #c62e46;
   --alt-background-color: #000000;
-  --background-color-holding-page: rgba(82, 0, 255,0.6);
-  --h1-color: #ff155e;
-  --h2-color: #ff155e;
-  --h3-color: #ff155e;
-  --h4-color: #ff155e;
-  --h5-color: #ff155e;
-  --h6-color: #ff155e;
+  --background-color-holding-page: rgba(82, 0, 255, 0.6);
+  --h1-color: #c62e46;
+  --h2-color: #c62e46;
+  --h3-color: #c62e46;
+  --h4-color: #c62e46;
+  --h5-color: #c62e46;
+  --h6-color: #c62e46;
   --primary-text-color: #222;
   --holding-page-title-color: #ebedf0;
-  --accent-color: #ff155e;
-  --overlay-color: #ff155e;
+  --accent-color: #c62e46;
+  --overlay-title-typeface: "Libre Baskerville", serif;
+  --overlay-description-typeface: "Libre Franklin", sans-serif;
+  --overlay-color: #c62e46;
   --overlay-title-color: #ffffff;
   --overlay-description-color: #ffffff;
-  --hyperlink-color: #ff155e;
+  --hyperlink-color: #c62e46;
   --hyperlink-alternate-color: orangered;
-  --hover-color: #111;
-  --visited-color: #ff155e;
-  --project-title-color: #ff155e;
+  --hover-color: #000000;
+  --visited-color: #020202;
+  --project-title-color: #c62e46;
   --project-sidebar-background-color: white;
   --project-sidebar-text-color: black;
   --heart-color: darkred;
@@ -107,8 +106,9 @@ html {
   --linear-gradient-color-2: #8d0b93;
   --linear-gradient-color-3: #321575;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
+  --event-info-text-color: white;
+  --event-info-typeface: "Inter", sans-serif;
 }
-
 
 body {
   font-family: var(--body-typeface);
@@ -136,8 +136,6 @@ svg {
   /* This is optional. Also try cover or leave out entirely. */
 }
 
-
-
 /* Global & Mobile Typography 
 
 ████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██ 
@@ -149,15 +147,15 @@ svg {
 */
 
 h1 {
-  font-size: 2rem;
+  font-size: 8.9375rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--h1-color);
 }
 
 h2 {
-  font-size: 2.25rem;
-  font-family: var(--heading-typeface);
+  font-size: 4.0625rem;
+  font-family: var(--subheading-typeface);
   margin-bottom: 1rem;
   color: var(--h2-color);
 }
@@ -198,7 +196,7 @@ em {
 }
 
 .fineprint {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .hero-headline {
@@ -206,8 +204,9 @@ em {
 }
 
 .hero-paragraph {
+  font-family: var(--body-typeface);
   font-size: 1.725rem;
-  color:#000000;
+  color: #000000;
 }
 
 .project-title {
@@ -215,17 +214,19 @@ em {
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
   margin-bottom: 1rem;
+  font-weight: 900;
 }
 
 .overlay-title {
   font-size: 2.875rem;
+  font-family: var(--overlay-title-typeface);
   color: var(--overlay-title-color);
 }
 
 .overlay-description {
+  font-family: var(--overlay-description-typeface);
   color: var(--overlay-description-color);
 }
-
 
 /* Hyperlink Styles */
 
@@ -272,14 +273,13 @@ a:active {
   color: var(--hyperlink-alternate-color);
 }
 
-.custom-navigation:hover {
-  background: url(assets/temp/heading-background.svg);
-  background-size: 15%;
-  background-repeat: no-repeat;
-  background-position: center center;
+a.custom-navigation {
+  color: var(--primary-text-color);
 }
 
-
+a.custom-navigation:hover {
+  color: var(--accent-color);
+}
 
 .heart {
   color: var(--heart-color);
@@ -293,8 +293,24 @@ a:active {
   line-height: 1.3;
 }
 
+.socials-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  min-height: 6rem;
+  font-size: 1.2rem;
+}
 .social-item {
-  line-height: 1.3;
+  line-height: 1.4;
+}
+
+a.footer-link {
+  color: var(--background-color);
+  border-bottom: 1px solid white;
+}
+a.footer-link:hover {
+  color: var(--primary-text-color);
 }
 
 .list-item {
@@ -308,8 +324,6 @@ a:active {
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-
-
 
 /* Hero 
 
@@ -327,17 +341,37 @@ a:active {
   flex-direction: column;
 }
 
+.danger-tape {
+  width: 100%;
+  min-height: 35vh;
+  background: url(../assets/branding-images/danger-tape.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  background-attachment: scroll;
+}
 
-
-.hero-image {width: 80%; border: 0px dashed hotpink; padding-bottom: 5rem;}
+.hero-image {
+  width: 100%;
+  padding-bottom: 5rem;
+  padding: 0 8rem;
+}
 .branding-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: flex-start;
+}
+
+.menu-navigation {
+  width: 20rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
   align-items: flex-start;
 }
-
 .logo {
   width: 2rem;
 }
@@ -348,7 +382,7 @@ a:active {
   flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 2rem 4rem;
+
   text-align: center;
 }
 
@@ -370,9 +404,6 @@ a:active {
   padding: 1rem;
 }
 
-
-
-
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
@@ -390,7 +421,7 @@ a:active {
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: .25rem;
+  padding: 0.25rem;
 }
 
 /* Defining the work page grid */
@@ -425,16 +456,13 @@ a:active {
   flex-direction: column;
   padding: 1em;
   background-color: var(--overlay-color);
-  transition: opacity .3s, visibility .3s;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .work-page-grid-item:hover .overlay {
   visibility: visible;
-  opacity: .8;
+  opacity: 0.8;
 }
-
-
-
 
 /* 
 
@@ -446,6 +474,11 @@ a:active {
                                            
 */
 
+.about-section-wrapper {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
 .about {
   display: grid;
   grid-template-columns: 1fr;
@@ -485,19 +518,27 @@ a:active {
                                                    
 */
 
-
 .global-footer {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
   min-height: 50vh;
   background: var(--background-color-footer);
-  padding: 1rem;
+}
+
+.event-info {
+  color: var(--event-info-text-color);
+  font-family: var(--event-info-typeface);
+  min-height: 6rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 
 .footer-item-1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+
+  padding: 2rem;
 }
 
 .footer-item-2 {
@@ -508,6 +549,8 @@ a:active {
 .footer-item-3 {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+
+  padding: 2rem;
 }
 
 .footer-item-4 {
@@ -517,11 +560,6 @@ a:active {
 
 .awards-list {
   margin-bottom: 2rem;
-}
-
-.idealogo {
-  
-  width: 120%;
 }
 
 /* Project Page 
@@ -598,12 +636,7 @@ a:active {
   width: 100%;
   padding: 1rem;
   /* Delete the following if you do not want a gradient background on the project page */
-
 }
-
-
-
-
 
 /* 
 
@@ -624,8 +657,11 @@ a:active {
   width: 100%;
   min-height: 100vh;
   /* Delete the following if you do not want a grainy gradient background on the holding page */
-  background:
-    linear-gradient(0deg, rgba(0, 0, 0, 1), var(--background-color-holding-page)),
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1),
+      var(--background-color-holding-page)
+    ),
     url(/assets/temp/noise.svg);
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
@@ -647,7 +683,7 @@ a:active {
 }
 
 .holding-page-copyright {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: var(--holding-page-footer-color);
   margin-bottom: 0;
 }
@@ -665,7 +701,6 @@ a:active {
   padding: 3rem;
 }
 
-
 /*
 ███████ ██████  ██████   ██████  ██████  
 ██      ██   ██ ██   ██ ██    ██ ██   ██ 
@@ -679,7 +714,8 @@ a:active {
   place-items: center;
 }
 
-.error-page-wrapper {}
+.error-page-wrapper {
+}
 
 .error-page-inner-container {
   text-align: center;
@@ -703,7 +739,8 @@ a:active {
   place-items: center;
 }
 
-.play-page-wrapper {}
+.play-page-wrapper {
+}
 
 .play-page-inner-container {
   text-align: center;
@@ -713,7 +750,6 @@ a:active {
   color: var(--accent-color);
 }
 
-
 /*
 ███████ ██   ██ ██████  ███████ ██████  ██ ███    ███ ███████ ███    ██ ████████ ███████ 
 ██       ██ ██  ██   ██ ██      ██   ██ ██ ████  ████ ██      ████   ██    ██    ██      
@@ -721,7 +757,6 @@ a:active {
 ██       ██ ██  ██      ██      ██   ██ ██ ██  ██  ██ ██      ██  ██ ██    ██         ██ 
 ███████ ██   ██ ██      ███████ ██   ██ ██ ██      ██ ███████ ██   ████    ██    ███████ 
 */
-
 
 .experiments-page {
   display: grid;
@@ -766,7 +801,8 @@ a:active {
   text-align: center;
 }
 
-.sub-navigation-item {}
+.sub-navigation-item {
+}
 
 a.sub-navigation-link {
   border: 1px solid var(--accent-color);
@@ -819,7 +855,6 @@ a.sub-navigation-link:hover {
   }
 }
 
-
 /*
 
 ███    ███ ███████ ██████  ██  █████       ██████  ██    ██ ███████ ██████  ██ ███████ ███████ 
@@ -830,15 +865,14 @@ a.sub-navigation-link:hover {
 
 */
 
-
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-
   .holding-page-title {
     font-size: 2rem;
   }
@@ -856,15 +890,11 @@ a.sub-navigation-link:hover {
   }
 
   .logo {
-    width: 5rem;
+    width: 2rem;
   }
 
   .hero {
     min-height: 100vh;
-  }
-
-  .hero-headline-wrapper {
-    padding: 4rem 8rem;
   }
 
   .grid {
@@ -877,8 +907,8 @@ a.sub-navigation-link:hover {
     filter: grayscale(100);
   }
 
-  .work-page-grid-item>a.grayscale:active img,
-  .work-page-grid-item>a.grayscale:hover img {
+  .work-page-grid-item > a.grayscale:active img,
+  .work-page-grid-item > a.grayscale:hover img {
     filter: grayscale(0);
   }
 
@@ -888,7 +918,6 @@ a.sub-navigation-link:hover {
   }
 
   .global-footer {
-    padding: 4rem 4rem 0 4rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -899,7 +928,7 @@ a.sub-navigation-link:hover {
 
   .footer-item-1 {
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
   }
 
   .about-item-2 {
@@ -908,8 +937,9 @@ a.sub-navigation-link:hover {
   }
 
   .footer-item-2 {
+    grid-column: 1 / 2;
     grid-row: 1 / 2;
-    grid-column: 2 / 3;
+    padding: 2rem;
   }
 
   .about-item-3 {
@@ -918,8 +948,8 @@ a.sub-navigation-link:hover {
   }
 
   .footer-item-3 {
-    grid-row: 1 / 2;
     grid-column: 3 / 4;
+    grid-row: 2 / 3;
   }
 
   .about-item-4 {
@@ -930,12 +960,20 @@ a.sub-navigation-link:hover {
   }
 
   .footer-item-4 {
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     grid-column: 1 / 4;
     text-align: center;
     align-self: end;
+    padding: 4rem;
   }
 
+  .footer-item-5 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+    text-align: center;
+    align-self: end;
+    padding: 1rem;
+  }
   /* Padding around work grid and project page */
   .portfolio,
   .project-wrapper {
@@ -945,7 +983,6 @@ a.sub-navigation-link:hover {
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
     flex-direction: row;
-
   }
 
   /* Sidebar on Large Devices */
@@ -978,18 +1015,16 @@ a.sub-navigation-link:hover {
   .arrow {
     padding-right: 1rem;
   }
-
-
 }
-
 
 /* Only add styles below to make very minor adjustments for extra or extra-extra large devices */
 
-
 /* X-Large devices (large desktops, 1200px and up)*/
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+}
