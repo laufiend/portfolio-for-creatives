@@ -508,6 +508,27 @@ a.footer-link:hover {
   grid-row: 4 / 5;
 }
 
+/* ARTIST PAGE */
+
+.artist-section {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding: 5rem;
+  border: 2px solid hotpink;
+}
+.artist-photo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.artist-info {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding-left: 4rem;
+}
+.artist-bio {
+  font-size: 2.5rem;
+}
+
 /* Global Footer
 
 ███████  ██████   ██████  ████████ ███████ ██████  
