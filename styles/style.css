@@ -209,7 +209,8 @@ em {
   color: #000000;
 }
 
-.project-title {
+.project-title,
+.artist-name {
   font-size: 3.725rem;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
@@ -319,12 +320,6 @@ a.footer-link:hover {
   margin-left: 1.2rem;
 }
 
-.project-description {
-  font-size: 1.225rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
 /* Hero 
 
 ██   ██ ███████ ██████   ██████  
@@ -365,11 +360,10 @@ a.footer-link:hover {
 }
 
 .menu-navigation {
-  width: 20rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem;
+  justify-content: flex-end;
+
   align-items: flex-start;
 }
 .logo {
@@ -416,12 +410,6 @@ a.footer-link:hover {
 
 .work-wrapper {
   flex: 1;
-}
-
-/* Padding around work grid and project page */
-.portfolio,
-.project-wrapper {
-  padding: 0.25rem;
 }
 
 /* Defining the work page grid */
@@ -512,21 +500,23 @@ a.footer-link:hover {
 
 .artist-section {
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  padding: 5rem;
-  border: 2px solid hotpink;
+  grid-template-columns: 1fr;
 }
+
 .artist-photo {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 .artist-info {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  padding-left: 4rem;
+  grid-column: 1/ 2;
+  grid-row: 2 / 3;
+  padding: 1rem;
 }
-.artist-bio {
-  font-size: 2.5rem;
+
+.artist-bio,
+.project-description {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
 
 /* Global Footer
@@ -546,7 +536,9 @@ a.footer-link:hover {
   min-height: 50vh;
   background: var(--background-color-footer);
 }
-
+.idea-interprets-footer-logo {
+  width: 70%;
+}
 .event-info {
   color: var(--event-info-text-color);
   font-family: var(--event-info-typeface);
@@ -655,7 +647,7 @@ a.footer-link:hover {
 
 .project-details {
   width: 100%;
-  padding: 1rem;
+  padding: 2rem;
   /* Delete the following if you do not want a gradient background on the project page */
 }
 
@@ -984,7 +976,10 @@ a.sub-navigation-link:hover {
     grid-row: 3 / 4;
     grid-column: 1 / 4;
     text-align: center;
-    align-self: end;
+    align-self: center;
+    justify-self: center;
+
+    width: 100%;
     padding: 4rem;
   }
 
@@ -994,11 +989,6 @@ a.sub-navigation-link:hover {
     text-align: center;
     align-self: end;
     padding: 1rem;
-  }
-  /* Padding around work grid and project page */
-  .portfolio,
-  .project-wrapper {
-    padding: 0.5rem;
   }
 
   /* Project Page Flex Direction on Large Devices */
@@ -1012,7 +1002,7 @@ a.sub-navigation-link:hover {
     height: 65vh;
 
     top: 5vh;
-    padding-right: 2rem;
+    padding: 2rem;
   }
 
   /* Main Project Image Area on Large Devices */
@@ -1035,6 +1025,43 @@ a.sub-navigation-link:hover {
 
   .arrow {
     padding-right: 1rem;
+  }
+
+  /* ARTIST PAGE */
+  .artist-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 4rem;
+  }
+
+  .artist-list-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding-right: 2rem;
+  }
+  .artist-list-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding-left: 2rem;
+  }
+  .artist-section {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .artist-photo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 4rem;
+  }
+  .artist-info {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 4rem;
+  }
+
+  .artist-bio {
+    font-size: 2.2rem;
   }
 }
 
