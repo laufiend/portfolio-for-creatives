@@ -532,6 +532,21 @@ a.footer-link:hover {
   margin-bottom: 1rem;
 }
 
+.project-artist-info {
+  display: flex;
+  width: 100%;
+}
+
+.project-artist-text {
+  flex: 1;
+}
+
+.artist-photo3 {
+  flex: 1;
+  padding-left: 2em;
+  align: top;
+}
+
 /* Global Footer
 
 ███████  ██████   ██████  ████████ ███████ ██████  
@@ -1013,7 +1028,7 @@ a.sub-navigation-link:hover {
 
   /* Sidebar on Large Devices */
   .project-aside {
-    width: 35%;
+    width: 65%;
     height: 65vh;
 
     top: 5vh;
@@ -1022,7 +1037,7 @@ a.sub-navigation-link:hover {
 
   /* Main Project Image Area on Large Devices */
   .project-details {
-    width: 65%;
+    width: 35%;
   }
 
   .project-image {
