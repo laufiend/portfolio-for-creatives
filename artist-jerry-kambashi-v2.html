@@ -18,6 +18,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./styles/style.css" />
+    
+    <!-- lightbox css -->
+    <link rel="stylesheet" href="./lightbox/dist/css/lightbox.css" />
+
   </head>
 
   <body class="work-page">
@@ -55,12 +59,16 @@
       </aside>
       <div class="project-details">
         <div class="project-image">
+          
+          <a href="assets/posters/jerry-kambashi--they-dont-want-us-here--idea-interprets-danger--poster-show-capilano-university.jpg" data-lightbox="They Don't Want Us Here by Jerry Kambashi" data-title="They Don't Want Us Here by Jerry Kambashi">
           <img
             src="assets/posters/jerry-kambashi--they-dont-want-us-here--idea-interprets-danger--poster-show-capilano-university.jpg"
             alt="They Don't Want Us Here by Jerry Kambashi"
             width="1500"
             height="2318"
           />
+        </a>
+        
         </div>
       </div>
     </div>
@@ -179,5 +187,17 @@
 
       window.addEventListener("scroll", myScrollFunc);
     </script>
+
+<!--lightbox javascript-->
+<script src="/lightbox/dist/js/lightbox-plus-jquery.js"></script>
+
+<script>
+  lightbox.option({
+    'fitImagesInViewport': false
+
+  })
+</script>
+  
+
   </body>
 </html>
