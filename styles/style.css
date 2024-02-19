@@ -129,7 +129,7 @@ body {
 img,
 svg {
   max-width: 100%;
-  height: auto;
+  max-height: 100vh;
   vertical-align: top;
   /* Removes the gap/space in inline elements for text descenders. */
   object-fit: contain;
@@ -519,6 +519,11 @@ a.footer-link:hover {
   margin-bottom: 1rem;
 }
 
+.project-description2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 /* Global Footer
 
 ███████  ██████   ██████  ████████ ███████ ██████  
@@ -618,6 +623,7 @@ a.footer-link:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  
 }
 
 .project-image {
@@ -628,6 +634,7 @@ a.footer-link:hover {
   align-items: center;
   justify-content: center;
 }
+
 
 .large-emoji-placeholder {
   font-size: 12rem; /* This is for making the placeholder emojis large and should be deleted */
