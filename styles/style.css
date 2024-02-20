@@ -129,7 +129,7 @@ body {
 img,
 svg {
   max-width: 100%;
-  max-height: 100vh;
+  height: auto;
   vertical-align: top;
   /* Removes the gap/space in inline elements for text descenders. */
   object-fit: contain;
@@ -532,20 +532,6 @@ a.footer-link:hover {
   margin-bottom: 1rem;
 }
 
-.project-artist-info {
-  display: flex;
-  width: 100%;
-}
-
-.project-artist-text {
-  flex: 1;
-}
-
-.artist-photo3 {
-  flex: 1;
-  padding-left: 2em;
-  align: top;
-}
 
 /* Global Footer
 
