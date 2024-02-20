@@ -1028,7 +1028,7 @@ a.sub-navigation-link:hover {
 
   /* Sidebar on Large Devices */
   .project-aside {
-    width: 65%;
+    width: 40%;
     height: 65vh;
 
     top: 5vh;
@@ -1037,7 +1037,7 @@ a.sub-navigation-link:hover {
 
   /* Main Project Image Area on Large Devices */
   .project-details {
-    width: 35%;
+    width: 60%;
   }
 
   .project-image {
