@@ -207,6 +207,7 @@ em {
   font-family: var(--body-typeface);
   font-size: 1.725rem;
   color: #000000;
+  padding-bottom: 4rem;
 }
 
 .project-title,
@@ -348,8 +349,7 @@ a.footer-link:hover {
 
 .hero-image {
   width: 100%;
-  padding-bottom: 5rem;
-  padding: 0 8rem;
+  padding: 0 8rem 2rem 8rem;
 }
 .branding-navigation {
   display: flex;
@@ -398,6 +398,10 @@ a.footer-link:hover {
   padding: 1rem;
 }
 
+.our-posters-wrapper {
+  padding: 2rem 0 2rem 1.5rem;
+}
+
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
@@ -410,6 +414,7 @@ a.footer-link:hover {
 
 .work-wrapper {
   flex: 1;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 /* Defining the work page grid */

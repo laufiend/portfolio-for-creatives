@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Keira Schick | IDEA Interprets: Danger</title>
+    <meta
+      name="description"
+      content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="screenshot.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d300c2ea15.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body class="work-page">
+    <header class="hero-header">
+      <ul class="branding-navigation">
+        <li class="logo">
+          <a href="index.html"
+            ><img
+              src="assets/branding-images/2024_Poster_Show_logomark_black-rgb.svg"
+          /></a>
+        </li>
+
+        <li>
+          <ul class="menu-navigation">
+            <li>
+              <a href="artists.html" class="custom-navigation"
+                >List of Artists</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
+    <div class="project-wrapper">
+      <aside class="project-aside">
+        <div id="jbaik">
+          <div class="project-info">
+            <h1 class="project-title">Isolation</h1>
+            <h3>by Keira Schick</h3>
+            <p class="project-description">
+              Artist rationale unavailable at this time.
+            </p>
+          </div>
+        </div>
+      </aside>
+      <div class="project-details">
+        <div class="project-image">
+          <img
+            src="assets/posters/placeholder.jpg"
+            alt="Isolation by Keira Schick"
+            width="1500"
+            height="2318"
+          />
+        </div>
+      </div>
+    </div>
+    <ul class="artist-section">
+      <li class="artist-photo">
+        <figure>
+          <img
+            src="assets/artist-headshots/keira-schick--idea-school-of-design-capilano-university--grad-2026.jpg"
+            onmouseover="this.src='assets/artist-headshots/keira-schick-danger.jpg'"
+            onmouseout="this.src='assets/artist-headshots/keira-schick--idea-school-of-design-capilano-university--grad-2026.jpg'"
+            alt="Keira Schick"
+          />
+
+        </figure>
+      </li>
+      <li class="artist-info">
+        <h2 class="artist-name">Keira Schick</h2>
+        <p class="artist-bio">
+          Keira is... well, she’s not too sure yet. She loves creating and
+          trying all mediums, all of which are part of her journey. She is
+          aiming high and one day hopes to see her creations displayed in
+          the wild.
+        </p>
+        <p class="project-description">
+          Instagram:
+          <a href="https://www.instagram.com/kikisgallery" target="_blank"
+          >@kikisgallery</a
+        >
+        </p>
+      </li>
+    </ul>
+
+    <ul class="global-footer">
+      <li class="footer-item-1">
+        <ul class="event-info">
+          <li>March 7—April 7 2024</li>
+          <li>Wednesday to Sunday, 11am—5pm</li>
+          <li>Ferry Building Gallery</li>
+          <li>1414 Argyle Ave, West Vancouver</li>
+        </ul>
+      </li>
+      <li class="footer-item-2">
+        <figure class="idea-logo">
+          <a
+            href="https://www.capilanou.ca/programs--courses/program-profiles/bachelor-of-design-in-visual-communication/"
+            target="_blank"
+          >
+            <img src="assets/branding-images/idea-logo.png"
+          />
+        
+        
+        
+        </a>
+        </figure>
+
+        <!-- add padding at the top of the logo in the CSS, center align -->
+      </li>
+      <li class="footer-item-3">
+        <ul class="socials-list">
+          <li class="social-item">
+            <a
+              href="https://www.capilanou.ca/programs--courses/search--select/explore-our-areas-of-study/fine--applied-arts/idea-school-of-design/"
+              target="_blank"
+              class="footer-link"
+              >IDEA School of Design</a
+            >
+          </li>
+          <li class="social-item">
+            <a
+              href="https://www.instagram.com/capuidea/"
+              target="blank"
+              class="footer-link"
+              >CapU IDEA Instagram</a
+            >
+          </li>
+          <li class="social-item">
+            <a
+              href="https://www.instagram.com/ideatwentysix"
+              target="_blank"
+              class="footer-link"
+              >IDEA 2026 Instagram</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="footer-item-4">
+        <a
+          href="https://www.capilanou.ca/programs--courses/program-profiles/bachelor-of-design-in-visual-communication/"
+          target="_blank"
+        >
+          <figure class="idea-interprets-footer-logo">
+            <img
+              src="assets/branding-images/2024_Poster_Show_logo_white-rgb.svg"
+            />
+          </figure>
+        </a>
+      </li>
+      <li class="footer-item-5">
+        <p class="fineprint">
+          &copy; 2020-2023. Hand crafted with <span class="heart">❤</span> +
+          Flexbox + CSS Grid by James Neufeld.
+        </p>
+      </li>
+    </ul>
+
+    <div id="myID" class="bottomMenu hide"><a href="#">Next Artist</a></div>
+
+    <script>
+      myID = document.getElementById("myID");
+
+      var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 600) {
+          myID.className = "bottomMenu show";
+        } else {
+          myID.className = "bottomMenu hide";
+        }
+      };
+
+      window.addEventListener("scroll", myScrollFunc);
+    </script>
+  </body>
+</html>
