@@ -588,6 +588,7 @@ a.footer-link:hover {
 .footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+  
 }
 
 .awards-list {

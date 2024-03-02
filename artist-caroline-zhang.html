@@ -166,21 +166,5 @@
       </li>
     </ul>
 
-    <div id="myID" class="bottomMenu hide"><a href="#">Next Artist</a></div>
-
-    <script>
-      myID = document.getElementById("myID");
-
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 600) {
-          myID.className = "bottomMenu show";
-        } else {
-          myID.className = "bottomMenu hide";
-        }
-      };
-
-      window.addEventListener("scroll", myScrollFunc);
-    </script>
   </body>
 </html>
