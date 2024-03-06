@@ -519,7 +519,6 @@ a.footer-link:hover {
   padding-bottom: 1em;
 }
 
-
 .artist-info {
   grid-column: 1/ 2;
   grid-row: 2 / 3;
@@ -536,7 +535,6 @@ a.footer-link:hover {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-
 
 /* Global Footer
 
@@ -588,7 +586,6 @@ a.footer-link:hover {
 .footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
-  
 }
 
 .awards-list {
@@ -638,7 +635,6 @@ a.footer-link:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
 }
 
 .project-image {
@@ -649,7 +645,6 @@ a.footer-link:hover {
   align-items: center;
   justify-content: center;
 }
-
 
 .large-emoji-placeholder {
   font-size: 12rem; /* This is for making the placeholder emojis large and should be deleted */
@@ -1000,6 +995,8 @@ a.sub-navigation-link:hover {
     text-align: center;
     align-self: center;
     justify-self: center;
+    display: grid;
+    place-items: center;
 
     width: 100%;
     padding: 4rem;
