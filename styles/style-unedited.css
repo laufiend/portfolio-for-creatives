@@ -43,12 +43,7 @@
 /* Inter Font (great for readability and minimal design) */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-/* Quicksand Font (body text) */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
-
 /*
-
 
 /* 
 ██ ███    ███ ██████   ██████  ██████  ████████      ██████ ███████ ███████ 
@@ -109,50 +104,50 @@
 
 :root {
   /* Typography */
-  --font-family-body: "Quicksand", sans-serif;
+  --font-family-body: "Inter", sans-serif;
   --font-family-heading: "Pixelify Sans", sans-serif;
-  --font-family-project-title: "Pixelify Sans", serif;
+  --font-family-project-title: "Eczar", serif;
   /* Core Colours */
-  --color-text-primary: #401a1a;
+  --color-text-primary: #222;
   --color-text-secondary: #333;
-  --color-accent-primary: #4e8652;
-  --color-accent-secondary: #b35252;
-  --color-overlay-primary: rgba(179, 82, 82, 0.6);
+  --color-accent-primary: #5200ff;
+  --color-accent-secondary: #ff057c;
+  --color-overlay-primary: rgba(82, 0, 255, 0.5);
   --color-highlight: lemonchiffon;
-  --color-fallback: #b35252; /* Fallback color for glitch effect on 404 page */
+  --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
-  --color-bg: #fed8d8;
-  --color-bg-about: #fed8d8;
-  --color-bg-footer: #fed8d8;
+  --color-bg: #fdfdfd;
+  --color-bg-about: #f5f5f5;
+  --color-bg-footer: #f5f5f5;
   --color-bg-holding-page: rgba(82, 0, 255, 0.6);
   /* Headings */
-  --h1-color: #4e8652;
-  --h2-color: #4e8652;
-  --h3-color: #4e8652;
-  --h4-color: #4e8652;
-  --h5-color: #4e8652;
-  --h6-color: #4e8652;
+  --h1-color: #5200ff;
+  --h2-color: #5200ff;
+  --h3-color: #5200ff;
+  --h4-color: #5200ff;
+  --h5-color: #5200ff;
+  --h6-color: #5200ff;
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
   --color-text-project-category: #ffffff;
   --color-text-project-description: #222;
   --color-text-project-sidebar: #222;
-  --color-text-project-title: #4e8652;
+  --color-text-project-title: #5200ff;
   --color-text-work-grid-title: #ffffff;
   /* Link States */
-  --color-link: #4e8652;
-  --color-link-hover: #b35252;
-  --color-link-visited: #4e8652;
+  --color-link: #5200ff;
+  --color-link-hover: #111;
+  --color-link-visited: #5200ff;
   /* Navigation */
-  --color-nav-link: #4e8652;
+  --color-nav-link: #5200ff;
   --color-nav-link-hover: #321575;
-  --color-nav-arrow: #4e8652;
+  --color-nav-arrow: #5200ff;
   --color-nav-arrow-hover: #000;
-  --color-nav-arrow-stroke: #4e8652;
+  --color-nav-arrow-stroke: #5200ff;
   --color-nav-arrow-stroke-hover: #000;
   /* Components */
-  --color-bg-full-width: #fed8d8;
-  --color-bg-project-description: #fed8d8;
+  --color-bg-full-width: #f5f5f5;
+  --color-bg-project-description: #f5f5f5;
   --color-bg-sidebar-project: orangered;
   --color-bg-sidebar-work: lemonchiffon;
   --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
@@ -165,7 +160,7 @@
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
-  --color-bg-selection: #ff9088;
+  --color-bg-selection: #5200ff;
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
   /* Assets */
   --image-noise-texture: url(/assets/temp/noise.svg);
@@ -209,13 +204,13 @@
 /* ------------------------------- */
 /* 📱 Responsive Design for Small Devices (Portrait Phones) */
 /* No media query needed for small devices like phones under 576px. This is the default in Bootstrap. */
-/* -------------------------------- */
+/* ------------------------------- */
 
 /* Add border-box sizing to make layout easier and enable smooth scrolling behavior */
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/branding-images/1x/Artboard\ 1-8.png"), auto !important; Custom cursor (change the URL below to use your own)
+  cursor: url("../assets/temp/up-cursor.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
@@ -261,10 +256,6 @@ svg {
   vertical-align: top; /* Removes little gaps under images (from line-height) */
   object-fit: contain; /* Optional: Makes sure the whole image fits inside its box */
   /* Try 'cover' if you want it to fill the space, or remove this line if not needed */
-}
-
-squirrel-green {
-  fill: #000;
 }
 
 /* ---------------------------------------- */
@@ -509,7 +500,7 @@ h6 {
 /* ------------------------------------------------------------------ */
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.3;
   margin-bottom: 1rem;
 }
@@ -539,15 +530,6 @@ sup {
   max-width: 40ch; /* Optimal line length for readability (~40 characters) */
   text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
   margin-inline: auto; /* Horizontally centers the text in its container */
-}
-
-/* Main hero subheadline — usually sits in the intro section */
-.hero-subheadline {
-  color: var(--color-accent-primary); /* Uses your brand's dominant color */
-  max-width: 40ch; /* Optimal line length for readability (~40 characters) */
-  text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
-  margin-inline: auto; /* Horizontally centers the text in its container */
-  font-family: var(--font-family-body);
 }
 
 /* Large project title — appears on individual project pages */
@@ -684,10 +666,6 @@ a.nav-link-primary:hover {
   -webkit-text-stroke-color: var(--color-nav-arrow-stroke-hover);
 }
 
-.custom-navigation {
-  font-size: 2rem;
-  font-weight: bold;
-}
 /* 
 
 ██   ██ ███████ ██████   ██████  
@@ -1056,14 +1034,9 @@ a.nav-link-primary:hover {
   margin-bottom: 2rem;
 }
 .footer-socials-list {
-  width: 25%;
-  justify-content: space-between;
   margin-bottom: 2rem;
-  display: flex;
-  flex-direction: row;
 }
 
-. footer-social-icon { }
 /* -------------------------------------------------------------------------- */
 /* 📏 Footer Item Spacing                                                     */
 /* -------------------------------------------------------------------------- */
@@ -1250,10 +1223,6 @@ a.nav-link-primary:hover {
 }
 
 /*
-
-
-
-
 
 ██████  ██       ██████   ██████      ██ ██████  ███████ ███████ ██    ██ ███    ███ ███████ 
 ██   ██ ██      ██    ██ ██          ██  ██   ██ ██      ██      ██    ██ ████  ████ ██      
