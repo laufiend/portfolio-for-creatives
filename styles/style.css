@@ -255,8 +255,15 @@ svg {
   /* Try 'cover' if you want it to fill the space, or remove this line if not needed */
 }
 
-squirrel-green {
-  fill: #000;
+.logo {
+  fill: #4e8652;
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.logo:hover {
+  fill: #b35252;
+  
 }
 
 /* ---------------------------------------- */
@@ -322,6 +329,7 @@ squirrel-green {
 /* Rotates the element slightly on hover – adds a playful effect */
 .rotate:hover {
   transform: rotate(4deg);
+  
 }
 
 /* ----------------------------- */
@@ -451,7 +459,7 @@ squirrel-green {
 /* Heading Styles (h1 - h6) */
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 3.5rem;
   font-family: var(--font-family-heading);
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -676,8 +684,9 @@ a.nav-link-primary:hover {
 }
 
 .custom-navigation {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 /* 
 
@@ -697,7 +706,7 @@ a.nav-link-primary:hover {
 
 .hero {
   width: 100%;
-  min-height: 80vh; /* Takes up most of the screen height */
+  min-height: 50vh; /* Takes up most of the screen height */
   display: flex;
   flex-direction: column;
 }
@@ -716,13 +725,15 @@ a.nav-link-primary:hover {
 .nav-branding-group {
   display: flex;
   flex-direction: row;
+  width: 20rem;
+  justify-content: space-between;
 }
 .nav-branding-item {
   padding: var(--padding-tiny);
 }
 
 .nav-branding-logo {
-  width: 3rem;
+  width: 8rem;
   /* TODO: Adjust the width of the logo on mobile devices here */
 }
 
@@ -873,6 +884,7 @@ a.nav-link-primary:hover {
 }
 /* Masonry Overlay Text */
 .overlay-container:hover .overlay {
+  background-color:red;
   opacity: 1;
 }
 
@@ -980,8 +992,12 @@ a.nav-link-primary:hover {
   grid-row: 2 / 3; /* Text spans the second row */
 }
 
+.signature-wrapper {
+  
+}
+
 .apsara-signature {
-  max-width: 70%;
+  max-width: 50%;
   justify-content: end;
   display: grid;
 }
