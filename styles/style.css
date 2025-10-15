@@ -36,8 +36,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
 
 /* Quicksand Font (body text) */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 /*
 
@@ -207,11 +206,12 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/branding-images/1x/Artboard\ 1-8.png"), auto !important; Custom cursor (change the URL below to use your own)
-
-  /* TODO: Replace the URL above to add a custom cursor. 
-     If you want to use the default browser cursor, just delete this line. */
+  cursor: url("../assets/branding-images/1x/Artboard\ 1-8.png"), auto !important;
 }
+
+/* Custom cursor (change the URL below to use your own) */
+/* TODO: Replace the URL above to add a custom cursor. 
+     If you want to use the default browser cursor, just delete this line. */
 
 /* Ensure all elements, including pseudo-elements, follow border-box sizing */
 *,
@@ -263,7 +263,6 @@ svg {
 
 .logo:hover {
   fill: #b35252;
-  
 }
 
 /* ---------------------------------------- */
@@ -329,7 +328,6 @@ svg {
 /* Rotates the element slightly on hover – adds a playful effect */
 .rotate:hover {
   transform: rotate(4deg);
-  
 }
 
 /* ----------------------------- */
@@ -588,6 +586,7 @@ sup {
 .work-grid-project-title {
   font-size: 2.875rem;
   color: var(--color-text-work-grid-title);
+  text-wrap: balance;
 }
 
 /* 🏷️ Project category label — displays the type or role of the project */
@@ -884,7 +883,7 @@ a.nav-link-primary:hover {
 }
 /* Masonry Overlay Text */
 .overlay-container:hover .overlay {
-  background-color:red;
+  background-color: red;
   opacity: 1;
 }
 
@@ -978,6 +977,7 @@ a.nav-link-primary:hover {
   background: var(--color-bg-about); /* Background color for the section */
   padding: var(--padding-small); /* Padding around the grid */
   flex: 1; /* Flex-grow to take up available space */
+  background: red;
 }
 
 /* Image section in the About page grid */
@@ -993,13 +993,15 @@ a.nav-link-primary:hover {
 }
 
 .signature-wrapper {
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 35vh;
+  background: yellow;
 }
 
 .apsara-signature {
-  max-width: 50%;
-  justify-content: end;
-  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
 
 /* 
@@ -1024,7 +1026,7 @@ a.nav-link-primary:hover {
   min-height: auto; /* Allows footer to expand based on content, no fixed height */
   background: var(--color-bg-footer); /* Using CSS variable for theming */
   padding: var(--padding-small); /* Internal spacing */
-
+  background: navy;
   /* Note: Using 'fr' units ensures proper scaling across devices */
 }
 
@@ -1076,7 +1078,8 @@ a.nav-link-primary:hover {
   flex-direction: row;
 }
 
-. footer-social-icon { }
+. footer-social-icon {
+}
 /* -------------------------------------------------------------------------- */
 /* 📏 Footer Item Spacing                                                     */
 /* -------------------------------------------------------------------------- */
