@@ -624,6 +624,8 @@ a:visited {
 /* Hover — when a user hovers their mouse over the link */
 a:hover {
   color: var(--color-link-hover);
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
 }
 
 /* Focus — when a link is focused (keyboard navigation) */
