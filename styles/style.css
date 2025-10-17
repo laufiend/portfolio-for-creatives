@@ -651,6 +651,15 @@ a.nav-link-primary:hover {
   color: var(--color-nav-link-hover);
 }
 
+a.error-home-link {
+  color: var(--color-nav-link-hover);
+}
+a.error-home-link:hover {
+  color: var(--color-nav-link-hover);
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
 /* -------------------------------------------------------------------------- */
 /* 🧭 Previous & Next Project Navigation Arrows                               */
 /* These styles are for the left and right arrows used to move between       */
