@@ -573,6 +573,13 @@ sup {
 /* ✨ Highlighted text — great for emphasis */
 .highlight-primary {
   color: var(--color-accent-secondary);
+  /* background-color: #fed8d8; */
+  background: radial-gradient(
+    circle,
+    rgba(254, 216, 216, 0.7) 0%,
+    rgba(254, 216, 216, 0) 100%
+  );
+  max-width: 70%;
 }
 
 .highlight-gradient {
@@ -719,9 +726,34 @@ a.error-home-link:hover {
   min-height: 50vh; /* Takes up most of the screen height */
   display: flex;
   flex-direction: column;
+  background-image: url("/assets/branding-images/temp-hero-img.jpg");
+  background-size: cover;
 }
+
+.hero-play {
+  width: 100%;
+  min-height: 50vh; /* Takes up most of the screen height */
+  display: flex;
+  flex-direction: column;
+  background-image: url("/assets/branding-images/temp-hero-play.jpg");
+  background-size: cover;
+}
+
+.hero-blog {
+  width: 100%;
+  min-height: 50vh; /* Takes up most of the screen height */
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-header {
   min-height: 6rem; /* Space reserved for logo + nav */
+  /* background-color: var(--color-bg); */
+  background-image: linear-gradient(
+    to top,
+    rgba(254, 216, 216, 0),
+    rgba(254, 216, 216, 1)
+  );
 }
 
 .nav-branding {
@@ -1517,6 +1549,10 @@ to keep your styles reusable and consistent.
   }
 
   .hero {
+    min-height: 100vh;
+  }
+
+  .hero-play {
     min-height: 100vh;
   }
 
