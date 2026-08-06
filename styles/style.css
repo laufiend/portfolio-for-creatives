@@ -923,6 +923,7 @@ a.error-home-link:hover {
   width: 100%;
   height: auto;
   position: relative; /* Needed to position the overlay */
+  display: block;
 }
 /* Masonry Overlay Text */
 .overlay-container:hover .overlay {
