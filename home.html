@@ -32,7 +32,10 @@
     />
     <link rel="stylesheet" href="./styles/masonry.css" />
     <link rel="stylesheet" href="./lightbox2/dist/css/lightbox.min.css" />
+    <link rel="stylesheet" href="./styles/random-image.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    
+
   </head>
 
   <body class="play-page">
@@ -117,9 +120,17 @@
         <span class="highlight-primary">
           <h2 class="hero-headline">you've stumbled upon a cottage in the woods...</h2>
 
-          <figure>
-            <img src="assets/branding-images/yawn-test.gif" width="200px">
-          </figure>
+           <div class="yuna-random-image-wrapper">
+      <div id="yuna-wrapper">
+        <a href="#">
+          <img
+            id="yuna"
+            src="./assets/branding-images/yuna-expression-01.jpg"
+            alt="Yuna icon"
+          />
+        </a>
+      </div>
+      </div>
 
           <h3>... and found a portfolio...</h3>
           <h3>"property of the acorn witch"</h3>
@@ -313,5 +324,9 @@
         </li>
       </ul>
     </div>
+
+    <script type="module" src="./js/random-images.js"></script> <!-- Random Yuna image on hover-->
+
+
   </body>
 </html>

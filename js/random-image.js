@@ -2,10 +2,10 @@ import $ from "https://esm.sh/jquery@4.0.0";
 
 // Yuna icons
 const yuna = [
-    "../assets/branding-images/random-image-swap-on-hover/test/yuna-expression-01.jpg",
-    "../assets/branding-images/random-image-swap-on-hover/test/yuna-expression-02.jpg",
-    "../assets/branding-images/random-image-swap-on-hover/test/yuna-expression-03.jpg",
-    "../assets/branding-images/random-image-swap-on-hover/test/yuna-expression-04.jpg"
+    "./assets/branding-images/yuna-expression-01.jpg",
+    "./assets/branding-images/yuna-expression-02.jpg",
+    "./assets/branding-images/yuna-expression-03.jpg",
+    "./assets/branding-images/yuna-expression-04.jpg"
 ];
 
 let previousImage = "";
