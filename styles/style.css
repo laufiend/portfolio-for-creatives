@@ -32,8 +32,11 @@
 /* TODO: Replace these Google Fonts with the ones you want to use on your site. */
 /* Remember, the more fonts you load, the longer it can take for your page to load. */
 
-/* Pixelify Sans Font (for headers or special text) */
-@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+/* Pixelify Sans Font (for headers or special text)
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"); */
+
+/* Cedarville Cursive Font (for headers or special text) */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
 /* Quicksand Font (body text) */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
@@ -101,8 +104,8 @@
 :root {
   /* Typography */
   --font-family-body: "Quicksand", sans-serif;
-  --font-family-heading: "Pixelify Sans", sans-serif;
-  --font-family-project-title: "Pixelify Sans", serif;
+  --font-family-heading: "Cedarville Cursive", cursive;
+  --font-family-project-title: "Cedarville Cursive", cursive;
   /* Core Colours */
   --color-text-primary: #401a1a;
   --color-text-secondary: #333;
