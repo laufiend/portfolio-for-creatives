@@ -109,9 +109,9 @@
   /* Core Colours */
   --color-text-primary: #401a1a;
   --color-text-secondary: #333;
-  --color-accent-primary: #4e8652;
+  --color-accent-primary: #7b4776;
   --color-accent-secondary: #b35252;
-  --color-overlay-primary: rgba(179, 82, 82, 0.6);
+  --color-overlay-primary: rgba(179, 82, 163, 0.6);
   --color-highlight: lemonchiffon;
   --color-fallback: #b35252; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
@@ -120,30 +120,30 @@
   --color-bg-footer: #fed8d8;
   --color-bg-holding-page: rgba(82, 0, 255, 0.6);
   /* Headings */
-  --h1-color: #4e8652;
-  --h2-color: #4e8652;
-  --h3-color: #4e8652;
-  --h4-color: #4e8652;
-  --h5-color: #4e8652;
-  --h6-color: #4e8652;
+  --h1-color: #7b4776;
+  --h2-color: #7b4776;
+  --h3-color: #7b4776;
+  --h4-color: #7b4776;
+  --h5-color: #7b4776;
+  --h6-color: #7b4776;
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
   --color-text-project-category: #ffffff;
   --color-text-project-description: #401a1a;
   --color-text-project-sidebar: #401a1a;
-  --color-text-project-title: #4e8652;
+  --color-text-project-title: #7b4776;
   --color-text-work-grid-title: #ffffff;
   /* Link States */
-  --color-link: #4e8652;
-  --color-link-hover: #b35252;
-  --color-link-visited: #4e8652;
+  --color-link: #7b4776;
+  --color-link-hover: #e02d6f;
+  --color-link-visited: #7b4776;
   /* Navigation */
-  --color-nav-link: #4e8652;
-  --color-nav-link-hover: #b35252;
-  --color-nav-arrow: #4e8652;
-  --color-nav-arrow-hover: #b35252;
-  --color-nav-arrow-stroke: #4e8652;
-  --color-nav-arrow-stroke-hover: #b35252;
+  --color-nav-link: #a80440;
+  --color-nav-link-hover: #e02d6f;
+  --color-nav-arrow: #a80440;
+  --color-nav-arrow-hover: #e02d6f;
+  --color-nav-arrow-stroke: #a80440;
+  --color-nav-arrow-stroke-hover: #e02d6f;
   /* Components */
   --color-bg-full-width: #fed8d8;
   --color-bg-project-description: #fed8d8;
@@ -936,7 +936,7 @@ a.error-home-link:hover {
 }
 /* Masonry Overlay Text */
 .overlay-container:hover .overlay {
-  background-color: rgba(179, 82, 82, 0.7);
+  background-color: rgba(159, 89, 145, 0.7);
   opacity: 1;
 }
 
