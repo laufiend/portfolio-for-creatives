@@ -1556,7 +1556,7 @@ to keep your styles reusable and consistent.
   }
 
   .nav-branding-logo {
-    width: 5rem;
+    width: 10rem;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
