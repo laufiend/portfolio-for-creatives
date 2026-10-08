@@ -1124,7 +1124,7 @@ a.error-home-link:hover {
   margin-bottom: 2rem;
 }
 .footer-socials-list {
-  width: 25%;
+  width: 50%;
   justify-content: space-between;
   margin-bottom: 2rem;
   display: flex;
