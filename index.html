@@ -16,7 +16,7 @@
     <link
       rel="icon"
       type="image/png"
-      href="assets/branding-images/acorn-favicon.ico"
+      href="assets/branding-images/acorn-witch-favicon.ico"
     />
     <meta property="og:image" content="screenshot.jpg" />
     <link
@@ -34,51 +34,46 @@
     <link rel="stylesheet" href="./lightbox2/dist/css/lightbox.min.css" />
     <link rel="stylesheet" href="./styles/random-image.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    
-
   </head>
 
   <body class="play-page">
     <section class="hero-play">
-      
-    <!-- Placeholder for your include -->
-    <div id="header-placeholder"></div>
+      <!-- Placeholder for your include -->
+      <div id="header-placeholder"></div>
 
-    <!-- Include header -->
-    <script>
-      fetch("include/header.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("header-placeholder").innerHTML = data;
-        });
-    </script>
+      <!-- Include header -->
+      <script>
+        fetch("include/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header-placeholder").innerHTML = data;
+          });
+      </script>
 
-    <!-- Start content -->
+      <!-- Start content -->
 
-    <div class="hero-headline-wrapper flex-row">
-      <div class="width-two-thirds">
-        <h1 class="hero-headline">
-          you've stumbled upon a cottage in the woods...
-        </h1>
-        <h2>... and found a portfolio...</h2>
-        <h3>"property of the acorn witch"</h3>
+      <div class="hero-headline-wrapper flex-row">
+        <div class="width-two-thirds">
+          <h1 class="hero-headline">
+            you've stumbled upon a cottage in the woods...
+          </h1>
+          <h2>... and found a portfolio...</h2>
+          <h3>"property of the acorn witch"</h3>
+        </div>
+        <div class="width-third">
+          <div class="yuna-random-image-wrapper">
+            <div id="yuna-wrapper">
+              <a href="#">
+                <img
+                  id="yuna"
+                  src="./assets/branding-images/yuna-expression-01.jpg"
+                  alt="Yuna icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="width-third">
-       <div class="yuna-random-image-wrapper">
-      <div id="yuna-wrapper">
-        <a href="#">
-          <img
-            id="yuna"
-            src="./assets/branding-images/yuna-expression-01.jpg"
-            alt="Yuna icon"
-          />
-        </a>
-      </div>
-    </div>
-      </div>
-    </div>
-
-
     </section>
 
     <main class="main-work-section">
@@ -209,9 +204,10 @@
 
     <!-- End content -->
 
-    <script type="module" src="./js/random-image.js"></script> <!-- Random Yuna image on hover-->
+    <script type="module" src="./js/random-image.js"></script>
+    <!-- Random Yuna image on hover-->
 
-     <!-- Placeholder for your include -->
+    <!-- Placeholder for your include -->
     <div id="footer-placeholder"></div>
 
     <script>
@@ -221,6 +217,5 @@
           document.getElementById("footer-placeholder").innerHTML = data;
         });
     </script>
-
   </body>
 </html>

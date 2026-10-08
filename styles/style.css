@@ -32,15 +32,11 @@
 /* TODO: Replace these Google Fonts with the ones you want to use on your site. */
 /* Remember, the more fonts you load, the longer it can take for your page to load. */
 
-/* Pixelify Sans Font (for headers or special text)
-@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"); */
+/* Nunito Font (body text) */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-/* Cedarville Cursive Font (for headers or special text) */
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-
-/* Quicksand Font (body text) */
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-
+/* Chelsea Market Font (headings) */
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
 /*
 
 
@@ -103,9 +99,9 @@
 
 :root {
   /* Typography */
-  --font-family-body: "Quicksand", sans-serif;
-  --font-family-heading: "Cedarville Cursive", cursive;
-  --font-family-project-title: "Cedarville Cursive", cursive;
+  --font-family-body: "Nunito", sans-serif;
+  --font-family-heading: "Chelsea Market", sans-serif;
+  --font-family-project-title: "Chelsea Market", sans-serif;
   /* Core Colours */
   --color-text-primary: #401a1a;
   --color-text-secondary: #333;
@@ -965,7 +961,9 @@ a.error-home-link:hover {
   background-color: var(
     --color-overlay-primary
   ); /* Background color of the overlay */
-  transition: opacity var(--duration-normal), visibility var(--duration-normal);
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
 }
 
 /* Hover effect on work page grid items */
@@ -1036,7 +1034,6 @@ a.error-home-link:hover {
 .about-grid-image {
   grid-column: 1 / 2; /* Image spans the first column */
   grid-row: 1 / 2; /* Image spans the first row */
- 
 }
 
 /* Text section in the About page grid */
